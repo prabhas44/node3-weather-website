@@ -63,28 +63,28 @@ app.get('/weather',(req,res) =>{
 app.get('',(req,res)=>{
     res.render('index',{
         title : 'Weather App',
-        name : 'Andrew Mead'
+        name : 'Prabhas Thakur'
     })
 })
 
 app.get('/about',(req,res)=>{
     res.render('about',{
         title : 'About Me',
-        name : 'Andrew Mead'
+        name : 'Prabhas Thakur'
     })
 })
 
 app.get('/help',(req,res) => {
     res.render('help',{
         helpText : 'This is some helpful text',
-        name : 'Andrew Mead'
+        name : 'Prabhas Thakur'
     })
 })
 
 app.get('/help/*',(req,res) =>{
     res.render('404',{
         title : '404',
-        name : 'Andrew Mead',
+        name : 'Prabhas Thakur',
         errorMessage : 'Help article not found'
 
     })
